@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="66d30dd8-8cce-4b57-ad25-aed136892426" name="Default Changelist" comment="" />
+    <list default="true" id="66d30dd8-8cce-4b57-ad25-aed136892426" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/ScanDMM-master.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learning_materials/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learning_materials/ScanDMM_学习指南.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learning_materials/坐标转换可视化.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learning_materials/基础工具函数代码示例.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learning_materials/学习指南使用说明.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScanDMM_学习指南.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/学习指南使用说明.md" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,22 +31,53 @@
       </list>
     </option>
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
   <component name="ProjectId" id="2H16cp8KaVf6M2Wuwz56QSV8UUj" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Python.基础工具函数代码示例.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/cv_3d/eye_scan/ScanDMM-master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/demo/output" />
@@ -42,9 +90,33 @@
       <recent name="$PROJECT_DIR$/demo" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.train">
+  <component name="RunManager" selected="Python.基础工具函数代码示例">
+    <configuration name="基础工具函数代码示例" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ScanDMM-master" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/learning_materials" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learning_materials/基础工具函数代码示例.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="cc" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DMM360" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -67,6 +139,7 @@
     </configuration>
     <configuration name="data_process" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DMM360" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -89,6 +162,7 @@
     </configuration>
     <configuration name="inference" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DMM360" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -111,6 +185,7 @@
     </configuration>
     <configuration name="train" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DMM360" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -133,6 +208,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.基础工具函数代码示例" />
         <item itemvalue="Python.train" />
         <item itemvalue="Python.data_process" />
         <item itemvalue="Python.inference" />
@@ -152,6 +228,14 @@
       </list>
     </option>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-c69650fc56ca-b11f5e8da5ad-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.15619.17" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -163,57 +247,15 @@
       <option name="presentableId" value="Default" />
       <updated>1667440324665</updated>
       <workItem from="1667440327186" duration="49356000" />
+      <workItem from="1765073481033" duration="6217000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
-  <component name="WindowStateProjectService">
-    <state width="1001" height="466" key="DebuggerActiveHint" timestamp="1667476538278">
-      <screen x="65" y="24" width="1855" height="1056" />
-    </state>
-    <state width="1001" height="466" key="DebuggerActiveHint/65.24.1855.1056@65.24.1855.1056" timestamp="1667476538278" />
-    <state width="1811" height="425" key="GridCell.Tab.0.bottom" timestamp="1667655158609">
-      <screen x="65" y="24" width="1855" height="1056" />
-    </state>
-    <state width="1811" height="425" key="GridCell.Tab.0.bottom/65.24.1855.1056@65.24.1855.1056" timestamp="1667655158609" />
-    <state width="1811" height="425" key="GridCell.Tab.0.center" timestamp="1667655158609">
-      <screen x="65" y="24" width="1855" height="1056" />
-    </state>
-    <state width="1811" height="425" key="GridCell.Tab.0.center/65.24.1855.1056@65.24.1855.1056" timestamp="1667655158609" />
-    <state width="1811" height="425" key="GridCell.Tab.0.left" timestamp="1667655158609">
-      <screen x="65" y="24" width="1855" height="1056" />
-    </state>
-    <state width="1811" height="425" key="GridCell.Tab.0.left/65.24.1855.1056@65.24.1855.1056" timestamp="1667655158609" />
-    <state width="1811" height="425" key="GridCell.Tab.0.right" timestamp="1667655158609">
-      <screen x="65" y="24" width="1855" height="1056" />
-    </state>
-    <state width="1811" height="425" key="GridCell.Tab.0.right/65.24.1855.1056@65.24.1855.1056" timestamp="1667655158609" />
-    <state width="1811" height="354" key="GridCell.Tab.1.bottom" timestamp="1667556684974">
-      <screen x="65" y="24" width="1855" height="1056" />
-    </state>
-    <state width="1811" height="354" key="GridCell.Tab.1.bottom/65.24.1855.1056@65.24.1855.1056" timestamp="1667556684974" />
-    <state width="1811" height="354" key="GridCell.Tab.1.center" timestamp="1667556684974">
-      <screen x="65" y="24" width="1855" height="1056" />
-    </state>
-    <state width="1811" height="354" key="GridCell.Tab.1.center/65.24.1855.1056@65.24.1855.1056" timestamp="1667556684974" />
-    <state width="1811" height="354" key="GridCell.Tab.1.left" timestamp="1667556684974">
-      <screen x="65" y="24" width="1855" height="1056" />
-    </state>
-    <state width="1811" height="354" key="GridCell.Tab.1.left/65.24.1855.1056@65.24.1855.1056" timestamp="1667556684974" />
-    <state width="1811" height="354" key="GridCell.Tab.1.right" timestamp="1667556684974">
-      <screen x="65" y="24" width="1855" height="1056" />
-    </state>
-    <state width="1811" height="354" key="GridCell.Tab.1.right/65.24.1855.1056@65.24.1855.1056" timestamp="1667556684974" />
-    <state x="494" y="174" key="SettingsEditor" timestamp="1667440564212">
-      <screen x="65" y="24" width="1855" height="1056" />
-    </state>
-    <state x="494" y="174" key="SettingsEditor/65.24.1855.1056@65.24.1855.1056" timestamp="1667440564212" />
-    <state x="655" y="236" width="672" height="678" key="search.everywhere.popup" timestamp="1667451606591">
-      <screen x="65" y="24" width="1855" height="1056" />
-    </state>
-    <state x="655" y="236" width="672" height="678" key="search.everywhere.popup/65.24.1855.1056@65.24.1855.1056" timestamp="1667451606591" />
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -224,8 +266,9 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DMM360$cc.coverage" NAME="cc Coverage Results" MODIFIED="1667479487015" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/DMM360$inference.coverage" NAME="inference Coverage Results" MODIFIED="1667652553565" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DMM360$data_process.coverage" NAME="data_process Coverage Results" MODIFIED="1667655036966" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ScanDMM_master$.coverage" NAME="基础工具函数代码示例 覆盖结果" MODIFIED="1765077374783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/learning_materials" />
     <SUITE FILE_PATH="coverage/DMM360$train.coverage" NAME="train Coverage Results" MODIFIED="1667655158604" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DMM360$inference.coverage" NAME="inference Coverage Results" MODIFIED="1667652553565" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
