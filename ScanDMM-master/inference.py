@@ -1,5 +1,6 @@
 from argparse import ArgumentParser
 
+import torch
 from pyro.infer import Predictive
 from models import DMM
 from suppor_lib import *
@@ -106,10 +107,10 @@ class Inference():
                     print('[{}]/[{}]:{} {} scanpaths are produced\nSaving to {}'
                           .format(count, num_img, img, scanpaths.shape[0], self.output_path))
                     save_name = img.split('.')[0] + '.npy'
-
+                    
                     if not os.path.exists(self.output_path):
                         os.makedirs(self.output_path)
-
+                        
                     np.save(os.path.join(self.output_path, save_name), scanpaths)
 
                     if self.if_plot:
@@ -138,7 +139,9 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     dmm = DMM(use_cuda=config.use_cuda)
-    dmm.load_state_dict(torch.load(args.model))
+    # 根据是否有CUDA自动选择设备映射
+    map_location = 'cuda' if config.use_cuda and torch.cuda.is_available() else 'cpu'
+    dmm.load_state_dict(torch.load(args.model, map_location=map_location))
 
     mytest = Inference(model=dmm,
                        img_path=args.inDir,

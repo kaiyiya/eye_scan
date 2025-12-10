@@ -1,6 +1,6 @@
 from sphere_cnn import Sphere_CNN
-import torch.nn as nn
 import torch
+import torch.nn as nn
 import pyro
 import pyro.contrib.examples.polyphonic_data_loader as poly
 import pyro.distributions as dist

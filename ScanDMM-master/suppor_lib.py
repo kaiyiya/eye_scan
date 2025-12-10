@@ -97,7 +97,8 @@ def plot_scanpaths(scanpaths, img_path, lengths, save_path, img_height=256, img_
 
     image = cv2.resize(matplotlib.image.imread(img_path), (img_witdth, img_height))
 
-    image_name = img_path.split('/')[-1].split('.')[0]
+    # 兼容Windows和Linux路径分隔符
+    image_name = os.path.basename(img_path).split('.')[0]
 
     if not os.path.exists(save_path):
         os.makedirs(save_path)
@@ -146,7 +147,7 @@ def plot_scanpaths(scanpaths, img_path, lengths, save_path, img_height=256, img_
         axs[idx1, idx2].imshow(image)
         axs[idx1, idx2].axis('off')
 
-    plt.savefig(save_path + '/sp_' + image_name + ".png")
+    plt.savefig(os.path.join(save_path, 'sp_' + image_name + ".png"))
     plt.axis('off')
     plt.subplots_adjust(wspace=0, hspace=0)
     plt.clf()
