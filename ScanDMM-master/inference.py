@@ -84,9 +84,10 @@ class Inference():
                 # modify the test_mask if you want to produce variable-length scanpaths.
                 test_mask = torch.ones([rep_num, self.length])
 
-                test_batch = _scanpaths.cuda()
-                test_batch_mask = test_mask.cuda()
-                test_batch_images = image_tensor.cuda()
+                device = next(self.dmm.parameters()).device
+                test_batch = _scanpaths.to(device)
+                test_batch_mask = test_mask.to(device)
+                test_batch_images = image_tensor.to(device)
 
                 # run model
                 with torch.no_grad():
@@ -105,10 +106,10 @@ class Inference():
                     print('[{}]/[{}]:{} {} scanpaths are produced\nSaving to {}'
                           .format(count, num_img, img, scanpaths.shape[0], self.output_path))
                     save_name = img.split('.')[0] + '.npy'
-                    
+
                     if not os.path.exists(self.output_path):
                         os.makedirs(self.output_path)
-                        
+
                     np.save(os.path.join(self.output_path, save_name), scanpaths)
 
                     if self.if_plot:

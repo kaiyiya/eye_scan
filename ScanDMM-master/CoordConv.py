@@ -50,8 +50,8 @@ class AddCoordsTh(nn.Module):
         xx_channel = xx_channel * 2 - 1
         yy_channel = yy_channel * 2 - 1
 
-        xx_channel = xx_channel.repeat(batch_size_tensor, 1, 1, 1).cuda()
-        yy_channel = yy_channel.repeat(batch_size_tensor, 1, 1, 1).cuda()
+        xx_channel = xx_channel.repeat(batch_size_tensor, 1, 1, 1).to(input_tensor.device)
+        yy_channel = yy_channel.repeat(batch_size_tensor, 1, 1, 1).to(input_tensor.device)
 
         ret = torch.cat([input_tensor, xx_channel, yy_channel], dim=1)
 
