@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="127fba29-165c-474a-ae2a-156d7b1683ea" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="2d5IdbsIBDgT1d3eN0sfVs4jmln" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\BaiduSyncdisk\爱吃胡萝卜\手把手带你发论文-V3\dream_code_v3\Mamba_file" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.2_28_RGSA (1)">
+    <configuration name="2_27_EGA" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="dream_code" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2_27_EGA.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="2_28_RGSA (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="dream_code" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2_28_RGSA.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="2_28_RGSA" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="dream_code" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="E:\BaiduSyncdisk\爱吃胡萝卜\手把手带你发论文-V3\dream_code_v3\2_28_RGSA.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="5_12_MambaIRv2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="dream_code" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Mamba_file" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Mamba_file/5_12_MambaIRv2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="5_13_HSMSSD (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="dream_code" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Mamba_file" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Mamba_file/5_13_HSMSSD.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.2_28_RGSA (1)" />
+        <item itemvalue="Python.2_28_RGSA" />
+        <item itemvalue="Python.2_27_EGA" />
+        <item itemvalue="Python.5_13_HSMSSD (1)" />
+        <item itemvalue="Python.5_12_MambaIRv2" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="127fba29-165c-474a-ae2a-156d7b1683ea" name="Changes" comment="" />
+      <created>1709291600594</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1709291600594</updated>
+      <workItem from="1709291601884" duration="67119000" />
+      <workItem from="1709560367403" duration="75000" />
+      <workItem from="1709622891351" duration="5209000" />
+      <workItem from="1709647653261" duration="1277000" />
+      <workItem from="1710835640097" duration="297000" />
+      <workItem from="1710849171075" duration="607000" />
+      <workItem from="1710900690028" duration="1328000" />
+      <workItem from="1710996177895" duration="422000" />
+      <workItem from="1711182381929" duration="6687000" />
+      <workItem from="1711376177727" duration="2999000" />
+      <workItem from="1711416958444" duration="80000" />
+      <workItem from="1711885646747" duration="24000" />
+      <workItem from="1712458077717" duration="1914000" />
+      <workItem from="1713183696903" duration="2299000" />
+      <workItem from="1714031385046" duration="670000" />
+      <workItem from="1714401979062" duration="1785000" />
+      <workItem from="1714750363256" duration="6007000" />
+      <workItem from="1715231296740" duration="9000" />
+      <workItem from="1715231894045" duration="1281000" />
+      <workItem from="1715923688660" duration="717000" />
+      <workItem from="1716196803469" duration="538000" />
+      <workItem from="1716259602001" duration="280000" />
+      <workItem from="1716260022139" duration="1270000" />
+      <workItem from="1716902108157" duration="860000" />
+      <workItem from="1717038446960" duration="196000" />
+      <workItem from="1717227843574" duration="4910000" />
+      <workItem from="1717913862797" duration="2307000" />
+      <workItem from="1718792793553" duration="1457000" />
+      <workItem from="1718806113276" duration="488000" />
+      <workItem from="1719147509161" duration="4694000" />
+      <workItem from="1720514659677" duration="1130000" />
+      <workItem from="1721034003584" duration="5032000" />
+      <workItem from="1721225144194" duration="5368000" />
+      <workItem from="1722743393841" duration="4621000" />
+      <workItem from="1723304732157" duration="2286000" />
+      <workItem from="1723607404167" duration="96386000" />
+      <workItem from="1724250626778" duration="16342000" />
+      <workItem from="1724334679627" duration="68750000" />
+      <workItem from="1725090496742" duration="25270000" />
+      <workItem from="1725263915973" duration="7873000" />
+      <workItem from="1725285747625" duration="15158000" />
+      <workItem from="1725349691099" duration="10438000" />
+      <workItem from="1725376624239" duration="8403000" />
+      <workItem from="1725434487556" duration="11381000" />
+      <workItem from="1725462195294" duration="7257000" />
+      <workItem from="1725533282021" duration="6816000" />
+      <workItem from="1725547088851" duration="7578000" />
+      <workItem from="1725697030486" duration="11449000" />
+      <workItem from="1725782467961" duration="4465000" />
+      <workItem from="1725796256661" duration="16427000" />
+      <workItem from="1725866924494" duration="274000" />
+      <workItem from="1726025001057" duration="14752000" />
+      <workItem from="1726286249969" duration="17351000" />
+      <workItem from="1726383702737" duration="5556000" />
+      <workItem from="1726402316206" duration="47597000" />
+      <workItem from="1726637913795" duration="1020000" />
+      <workItem from="1726645121118" duration="11107000" />
+      <workItem from="1726662371624" duration="20000" />
+      <workItem from="1726710574649" duration="11725000" />
+      <workItem from="1726733585356" duration="3374000" />
+      <workItem from="1726803567660" duration="18538000" />
+      <workItem from="1726919357756" duration="3582000" />
+      <workItem from="1727017555957" duration="7963000" />
+      <workItem from="1727026890837" duration="862000" />
+      <workItem from="1727081945569" duration="7977000" />
+      <workItem from="1735873482784" duration="758000" />
+      <workItem from="1735874847344" duration="873000" />
+      <workItem from="1736145824508" duration="1860000" />
+      <workItem from="1736165907274" duration="41000" />
+      <workItem from="1736169755144" duration="655000" />
+      <workItem from="1736228434516" duration="3782000" />
+      <workItem from="1736340761298" duration="6478000" />
+      <workItem from="1740912861956" duration="1801000" />
+      <workItem from="1740973793134" duration="3776000" />
+      <workItem from="1741076064818" duration="10349000" />
+      <workItem from="1741655002681" duration="1278000" />
+      <workItem from="1741760828181" duration="506000" />
+      <workItem from="1741849140820" duration="3203000" />
+      <workItem from="1742278864375" duration="2799000" />
+      <workItem from="1742356459159" duration="10184000" />
+      <workItem from="1742377267591" duration="2882000" />
+      <workItem from="1742785821427" duration="1825000" />
+      <workItem from="1743065237384" duration="2250000" />
+      <workItem from="1743346544865" duration="157000" />
+      <workItem from="1743501603520" duration="3657000" />
+      <workItem from="1743942067175" duration="690000" />
+      <workItem from="1744090615969" duration="1462000" />
+      <workItem from="1744188802624" duration="3972000" />
+      <workItem from="1747236003924" duration="106000" />
+      <workItem from="1747581017028" duration="740000" />
+      <workItem from="1749451037779" duration="6422000" />
+      <workItem from="1750649698960" duration="2699000" />
+      <workItem from="1750731732008" duration="3312000" />
+      <workItem from="1754360887971" duration="18829000" />
+      <workItem from="1754464798826" duration="76395000" />
+      <workItem from="1755244689215" duration="18592000" />
+      <workItem from="1755405183431" duration="20960000" />
+      <workItem from="1755610847665" duration="10809000" />
+      <workItem from="1756039135230" duration="4340000" />
+      <workItem from="1756086127206" duration="13347000" />
+      <workItem from="1756219297296" duration="27000" />
+      <workItem from="1756730390293" duration="164000" />
+      <workItem from="1756730583339" duration="4650000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/2_4_SeaAttention.py</url>
+          <line>95</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/3_3_Trend_aware_self_attention.py</url>
+          <line>53</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Mamba_file/mamba_ssm/ops/selective_scan_interface.py</url>
+          <line>317</line>
+          <option name="timeStamp" value="168" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Mamba_file/5_4_FusionMamba.py</url>
+          <line>160</line>
+          <option name="timeStamp" value="169" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/4_7_GSA.py</url>
+          <line>340</line>
+          <option name="timeStamp" value="187" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/4_7_GSA.py</url>
+          <line>99</line>
+          <option name="timeStamp" value="188" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/4_7_GSA.py</url>
+          <line>130</line>
+          <option name="timeStamp" value="192" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/4_7_GSA.py</url>
+          <line>341</line>
+          <option name="timeStamp" value="193" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/4_7_GSA.py</url>
+          <line>127</line>
+          <option name="timeStamp" value="198" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/2_21_TSSA.py</url>
+          <line>42</line>
+          <option name="timeStamp" value="210" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/2_21_TSSA.py</url>
+          <line>48</line>
+          <option name="timeStamp" value="211" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Mamba_file/5_12_SpatialMamba.py</url>
+          <line>99</line>
+          <option name="timeStamp" value="223" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/2_22_ESC.py</url>
+          <line>81</line>
+          <option name="timeStamp" value="226" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Mamba_file/5_11_EVSSM.py</url>
+          <line>290</line>
+          <option name="timeStamp" value="244" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/3_13_DiffAttn.py</url>
+          <line>95</line>
+          <option name="timeStamp" value="246" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/2_25_SHMA.py</url>
+          <line>111</line>
+          <option name="timeStamp" value="250" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="pools" />
+        <watch expression="self.A_log" />
+        <watch expression="h" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/dream_code_v2$6_4_MFEblock.coverage" NAME="6_4_MFEblock Coverage Results" MODIFIED="1727026302416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v3$2_18_SMFA.coverage" NAME="2_18_SMFA Coverage Results" MODIFIED="1754362810422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$2_1_Attention.coverage" NAME="2_1_Attention Coverage Results" MODIFIED="1713184681401" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$2_3_EMAttention__1_.coverage" NAME="2_3_EMAttention (1) Coverage Results" MODIFIED="1709372845286" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$MSDR.coverage" NAME="MSDR Coverage Results" MODIFIED="1726541663631" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v3$5_11_EVSSM__1_.coverage" NAME="5_11_EVSSM (1) Coverage Results" MODIFIED="1755152922142" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mamba_file" />
+    <SUITE FILE_PATH="coverage/dream_code$Dig.coverage" NAME="Dig Coverage Results" MODIFIED="1724233892668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$2_8_P2TAttention.coverage" NAME="2_8_P2TAttention Coverage Results" MODIFIED="1713184724496" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$5_5_SAFM.coverage" NAME="5_5_SAFM Coverage Results" MODIFIED="1713185459028" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v3$5_12_MambaIRv2.coverage" NAME="5_12_MambaIRv2 Coverage Results" MODIFIED="1756088584479" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mamba_file" />
+    <SUITE FILE_PATH="coverage/dream_code$ECA_Net.coverage" NAME="ECA-Net Coverage Results" MODIFIED="1709301403458" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$2_10_MCANet__1_.coverage" NAME="2_10_MCANet (1) Coverage Results" MODIFIED="1727022184348" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v3$2_26_BiXT.coverage" NAME="2_26_BiXT Coverage Results" MODIFIED="1755513085414" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$CoordAttention.coverage" NAME="CoordAttention Coverage Results" MODIFIED="1709349998509" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$GroupMamba.coverage" NAME="GroupMamba Coverage Results" MODIFIED="1725817792985" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$5_10_PyramidSSM.coverage" NAME="5_10_PyramidSSM Coverage Results" MODIFIED="1727148361449" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mamba_file" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$2_7_HiLoAttention.coverage" NAME="2_7_HiLoAttention Coverage Results" MODIFIED="1727020237728" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v3$2_19_SSA.coverage" NAME="2_19_SSA Coverage Results" MODIFIED="1754468073405" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$5_1_Mamba.coverage" NAME="5_1_Mamba Coverage Results" MODIFIED="1742377708025" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mamba_file" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$2_3_EMAttention.coverage" NAME="2_3_EMAttention Coverage Results" MODIFIED="1727020187440" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$2_5_LSKNet.coverage" NAME="2_5_LSKNet Coverage Results" MODIFIED="1713184708627" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$SEAttention.coverage" NAME="SEAttention Coverage Results" MODIFIED="1709291754983" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$5_2_PointMamba__1_.coverage" NAME="5_2_PointMamba (1) Coverage Results" MODIFIED="1727027231423" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mamba_file" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$2_9_FocalNet.coverage" NAME="2_9_FocalNet Coverage Results" MODIFIED="1727021583918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$Deformable_Attention.coverage" NAME="Deformable_Attention Coverage Results" MODIFIED="1726333787911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$Attention.coverage" NAME="Attention Coverage Results" MODIFIED="1709351067929" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v3$3_13_DiffAttn.coverage" NAME="3_13_DiffAttn Coverage Results" MODIFIED="1755175060295" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v3$2_25_SHMA.coverage" NAME="2_25_SHMA Coverage Results" MODIFIED="1755416375780" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$CBAM.coverage" NAME="CBAM Coverage Results" MODIFIED="1709349602977" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v3$2_28_TAB.coverage" NAME="2_28_TAB Coverage Results" MODIFIED="1756213091529" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$VITComer_2.coverage" NAME="VITComer_2 Coverage Results" MODIFIED="1726051457527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$UV_Mamba.coverage" NAME="UV_Mamba Coverage Results" MODIFIED="1725806162345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mamba_file" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$2_6_DilateFormer.coverage" NAME="2_6_DilateFormer Coverage Results" MODIFIED="1727020221171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v3$4_7_GSA.coverage" NAME="4_7_GSA Coverage Results" MODIFIED="1754720947071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$UV_Mamba.coverage" NAME="UV_Mamba Coverage Results" MODIFIED="1727027672300" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mamba_file" />
+    <SUITE FILE_PATH="coverage/dream_code$TripletAttention.coverage" NAME="TripletAttention Coverage Results" MODIFIED="1709349969337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$PointMamba.coverage" NAME="PointMamba Coverage Results" MODIFIED="1727027215236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mamba_file" />
+    <SUITE FILE_PATH="coverage/dream_code$WaterMamba.coverage" NAME="WaterMamba Coverage Results" MODIFIED="1726368046500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mamba_file" />
+    <SUITE FILE_PATH="coverage/dream_code_v3$4_8_TSSA.coverage" NAME="4_8_TSSA Coverage Results" MODIFIED="1754793335974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$Histoformer__1_.coverage" NAME="Histoformer (1) Coverage Results" MODIFIED="1724345600395" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$2_6_DilateFormer.coverage" NAME="2_6_DilateFormer Coverage Results" MODIFIED="1716196884583" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$6_2_MSFblock__1_.coverage" NAME="6_2_MSFblock (1) Coverage Results" MODIFIED="1727026229024" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$WITRAN__1_.coverage" NAME="WITRAN (1) Coverage Results" MODIFIED="1726810518235" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$3_12_ModernTCN__1_.coverage" NAME="3_12_ModernTCN (1) Coverage Results" MODIFIED="1727024812970" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$1_7_DANet.coverage" NAME="1_7_DANet Coverage Results" MODIFIED="1720514864600" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v3$4_6_MALA.coverage" NAME="4_6_MALA Coverage Results" MODIFIED="1754470717776" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$ModernTCN.coverage" NAME="ModernTCN Coverage Results" MODIFIED="1727024793995" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$4_1_EfficientAdditiveAttnetion.coverage" NAME="4_1_EfficientAdditiveAttnetion Coverage Results" MODIFIED="1713185410933" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$Mamba__2_.coverage" NAME="Mamba (2) Coverage Results" MODIFIED="1725095506495" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mamba_file" />
+    <SUITE FILE_PATH="coverage/dream_code$TFF.coverage" NAME="TFF Coverage Results" MODIFIED="1726028755731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$3_10_TimesNet__1_.coverage" NAME="3_10_TimesNet (1) Coverage Results" MODIFIED="1727024703053" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$5_1_Gated_Fusion.coverage" NAME="5_1_Gated_Fusion Coverage Results" MODIFIED="1713185438093" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$Mamba_in_speech.coverage" NAME="Mamba_in_speech Coverage Results" MODIFIED="1725376633391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mamba_file" />
+    <SUITE FILE_PATH="coverage/dream_code$ConBiMamba.coverage" NAME="ConBiMamba Coverage Results" MODIFIED="1726368020468" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mamba_file" />
+    <SUITE FILE_PATH="coverage/dream_code$4_3_AgentAttention.coverage" NAME="4_3_AgentAttention Coverage Results" MODIFIED="1713185421005" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$RMT.coverage" NAME="RMT Coverage Results" MODIFIED="1726919482500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$6_1_Gated_Fusion__1_.coverage" NAME="6_1_Gated_Fusion (1) Coverage Results" MODIFIED="1727025173407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$2_17_RMT.coverage" NAME="2_17_RMT Coverage Results" MODIFIED="1727024126202" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$3_8_STAR__1_.coverage" NAME="3_8_STAR (1) Coverage Results" MODIFIED="1727024429633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$GAC.coverage" NAME="GAC Coverage Results" MODIFIED="1726385315989" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$ModernTCN.coverage" NAME="ModernTCN Coverage Results" MODIFIED="1726844559323" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$MCANet.coverage" NAME="MCANet Coverage Results" MODIFIED="1727022039042" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$4_4_MLLAttention__1_.coverage" NAME="4_4_MLLAttention (1) Coverage Results" MODIFIED="1727025130887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$3_1_PAM.coverage" NAME="3_1_PAM Coverage Results" MODIFIED="1725810419181" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$mamba_simple.coverage" NAME="mamba_simple Coverage Results" MODIFIED="1724729031448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mamba_file/mamba_ssm/modules" />
+    <SUITE FILE_PATH="coverage/dream_code$5_6_OSRAttention.coverage" NAME="5_6_OSRAttention Coverage Results" MODIFIED="1713185464773" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$BMCNet.coverage" NAME="BMCNet Coverage Results" MODIFIED="1727023675962" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$5_3_VMRNN.coverage" NAME="5_3_VMRNN Coverage Results" MODIFIED="1727027280988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mamba_file" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$VITComer_2.coverage" NAME="VITComer_2 Coverage Results" MODIFIED="1727026736849" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$PKINet.coverage" NAME="PKINet Coverage Results" MODIFIED="1723954640569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$6_6_OSRAttention.coverage" NAME="6_6_OSRAttention Coverage Results" MODIFIED="1727026374916" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$2_13_EMCAD.coverage" NAME="2_13_EMCAD Coverage Results" MODIFIED="1727023512895" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$5_2_MSFblock.coverage" NAME="5_2_MSFblock Coverage Results" MODIFIED="1713185442668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$1_5_CoordAttention.coverage" NAME="1_5_CoordAttention Coverage Results" MODIFIED="1713184667316" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$5_4_MFEblock.coverage" NAME="5_4_MFEblock Coverage Results" MODIFIED="1713185453247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$MIC.coverage" NAME="MIC Coverage Results" MODIFIED="1726385067069" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v3$4_5_PolaFormer.coverage" NAME="4_5_PolaFormer Coverage Results" MODIFIED="1754369193388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$3_9_MSDR.coverage" NAME="3_9_MSDR Coverage Results" MODIFIED="1727024615972" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v3$2_22_ESC.coverage" NAME="2_22_ESC Coverage Results" MODIFIED="1755152333229" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$SENet__1_.coverage" NAME="SENet (1) Coverage Results" MODIFIED="1709293037463" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$5_7_WaterMamba.coverage" NAME="5_7_WaterMamba Coverage Results" MODIFIED="1727027488011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mamba_file" />
+    <SUITE FILE_PATH="coverage/dream_code_v3$5_14_HSMSSD.coverage" NAME="5_14_HSMSSD Coverage Results" MODIFIED="1755611053294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mamba_file" />
+    <SUITE FILE_PATH="coverage/dream_code$SPECAT.coverage" NAME="SPECAT Coverage Results" MODIFIED="1724165224966" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$5_2_MSFblock.coverage" NAME="5_2_MSFblock Coverage Results" MODIFIED="1727026193971" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$1_4_TripletAttention.coverage" NAME="1_4_TripletAttention Coverage Results" MODIFIED="1713184662564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$3_6_UnetTSF.coverage" NAME="3_6_UnetTSF Coverage Results" MODIFIED="1713185404906" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$TSLANet.coverage" NAME="TSLANet Coverage Results" MODIFIED="1726659799603" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$DEANet.coverage" NAME="DEANet Coverage Results" MODIFIED="1723976140235" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$DANet.coverage" NAME="DANet Coverage Results" MODIFIED="1709351050943" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$Deformable_Attention.coverage" NAME="Deformable_Attention Coverage Results" MODIFIED="1727024295542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$FusionMamba.coverage" NAME="FusionMamba Coverage Results" MODIFIED="1725810190958" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mamba_file" />
+    <SUITE FILE_PATH="coverage/dream_code_v3$5_12_GroupMamba.coverage" NAME="5_12_GroupMamba Coverage Results" MODIFIED="1755054873723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mamba_file" />
+    <SUITE FILE_PATH="coverage/dream_code$PointMamba.coverage" NAME="PointMamba Coverage Results" MODIFIED="1726924456002" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mamba_file" />
+    <SUITE FILE_PATH="coverage/dream_code$KAN.coverage" NAME="KAN Coverage Results" MODIFIED="1726543421451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$1_3_2_Channel_Spatial_Fusion.coverage" NAME="1_3_2_Channel_Spatial_Fusion Coverage Results" MODIFIED="1717231244322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$MCANet.coverage" NAME="MCANet Coverage Results" MODIFIED="1723730586046" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$2_12_DEANet.coverage" NAME="2_12_DEANet Coverage Results" MODIFIED="1727022605138" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$2_15_Histoformer__1_.coverage" NAME="2_15_Histoformer (1) Coverage Results" MODIFIED="1727023898737" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$STAR__1_.coverage" NAME="STAR (1) Coverage Results" MODIFIED="1726471925836" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$5_4_FusionMamba.coverage" NAME="5_4_FusionMamba Coverage Results" MODIFIED="1727027307899" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mamba_file" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$4_3_AgentAttention.coverage" NAME="4_3_AgentAttention Coverage Results" MODIFIED="1727024907119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$1_1_SENet_v2.coverage" NAME="1_1_SENet_v2 Coverage Results" MODIFIED="1714402575738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v3$5_13_HSMSSD__2_.coverage" NAME="5_13_HSMSSD (2) Coverage Results" MODIFIED="1755611074723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$STAR.coverage" NAME="STAR Coverage Results" MODIFIED="1727024411558" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$MLLAttention.coverage" NAME="MLLAttention Coverage Results" MODIFIED="1727025092573" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$multi_Scale_Linear_Attention_2.coverage" NAME="multi_Scale_Linear_Attention_2 Coverage Results" MODIFIED="1709523825786" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$SelfAttention.coverage" NAME="SelfAttention Coverage Results" MODIFIED="1709347686310" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$6_7_MSAA.coverage" NAME="6_7_MSAA Coverage Results" MODIFIED="1727026455251" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$TimesNet__1_.coverage" NAME="TimesNet (1) Coverage Results" MODIFIED="1726631168706" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v3$5_1_Mamba.coverage" NAME="5_1_Mamba Coverage Results" MODIFIED="1755054036326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mamba_file" />
+    <SUITE FILE_PATH="coverage/dream_code_v3$5_13_HSMSSD__1_.coverage" NAME="5_13_HSMSSD (1) Coverage Results" MODIFIED="1756088827010" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mamba_file" />
+    <SUITE FILE_PATH="coverage/dream_code_v3$5_13_HSMSSD.coverage" NAME="5_13_HSMSSD Coverage Results" MODIFIED="1755610596269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$InfiniAttention.coverage" NAME="InfiniAttention Coverage Results" MODIFIED="1723991037930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$6_8_TFF.coverage" NAME="6_8_TFF Coverage Results" MODIFIED="1727026486001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$VMRNN.coverage" NAME="VMRNN Coverage Results" MODIFIED="1726368056559" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mamba_file" />
+    <SUITE FILE_PATH="coverage/dream_code$3_5_Temporal_conv.coverage" NAME="3_5_Temporal_conv Coverage Results" MODIFIED="1713185399891" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v3$5_3_VMRNN.coverage" NAME="5_3_VMRNN Coverage Results" MODIFIED="1755053839775" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mamba_file" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$3_2_CT_MSA.coverage" NAME="3_2_CT_MSA Coverage Results" MODIFIED="1727024197984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$FocalNet.coverage" NAME="FocalNet Coverage Results" MODIFIED="1722743830811" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v3$2_28_RGSA__1_.coverage" NAME="2_28_RGSA (1) Coverage Results" MODIFIED="1756213218609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$4_1_EfficientAdditiveAttnetion.coverage" NAME="4_1_EfficientAdditiveAttnetion Coverage Results" MODIFIED="1727024853891" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$multi_scale_linear_attention.coverage" NAME="multi_scale_linear_attention Coverage Results" MODIFIED="1709521384619" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$2_5_LSKNet.coverage" NAME="2_5_LSKNet Coverage Results" MODIFIED="1727020205995" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v3$5_11_MaIR.coverage" NAME="5_11_MaIR Coverage Results" MODIFIED="1755006874213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mamba_file" />
+    <SUITE FILE_PATH="coverage/dream_code$1_6_ECA_Net.coverage" NAME="1_6_ECA-Net Coverage Results" MODIFIED="1713184671928" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v3$2_24_SimamAttention.coverage" NAME="2_24_SimamAttention Coverage Results" MODIFIED="1755308411558" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$2_7_HiLoAttention.coverage" NAME="2_7_HiLoAttention Coverage Results" MODIFIED="1713184719314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v3$4_7_HDPA.coverage" NAME="4_7_HDPA Coverage Results" MODIFIED="1754745732648" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$CoTAttention.coverage" NAME="CoTAttention Coverage Results" MODIFIED="1709352286870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v3$5_10_PyramidSSM.coverage" NAME="5_10_PyramidSSM Coverage Results" MODIFIED="1754478349319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mamba_file" />
+    <SUITE FILE_PATH="coverage/dream_code_v3$2_27_EGA.coverage" NAME="2_27_EGA Coverage Results" MODIFIED="1756189455984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$ShuffleMamba.coverage" NAME="ShuffleMamba Coverage Results" MODIFIED="1726368010895" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mamba_file" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$2_14_BMCNet__1_.coverage" NAME="2_14_BMCNet (1) Coverage Results" MODIFIED="1727023728454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$3_4_M_GTU.coverage" NAME="3_4_M_GTU Coverage Results" MODIFIED="1713185394072" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$TimesNet.coverage" NAME="TimesNet Coverage Results" MODIFIED="1727024680220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$PKINet.coverage" NAME="PKINet Coverage Results" MODIFIED="1727022338793" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$6_5_SAFM.coverage" NAME="6_5_SAFM Coverage Results" MODIFIED="1727026328824" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$2_7_HiLoAttention__1_.coverage" NAME="2_7_HiLoAttention (1) Coverage Results" MODIFIED="1709440289369" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$PyramidSSM.coverage" NAME="PyramidSSM Coverage Results" MODIFIED="1726368031973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mamba_file" />
+    <SUITE FILE_PATH="coverage/dream_code$PEM.coverage" NAME="PEM Coverage Results" MODIFIED="1725810400942" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$SKNets.coverage" NAME="SKNets Coverage Results" MODIFIED="1709349500751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$2_4_SeaAttention.coverage" NAME="2_4_SeaAttention Coverage Results" MODIFIED="1713184698601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$ViTCoMer.coverage" NAME="ViTCoMer Coverage Results" MODIFIED="1726051439481" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$VWFormer.coverage" NAME="VWFormer Coverage Results" MODIFIED="1727027081808" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$3_2_CT_MSA.coverage" NAME="3_2_CT_MSA Coverage Results" MODIFIED="1716197083013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$2_3_EMAttention_section7_8.coverage" NAME="2_3_EMAttention_section7_8 Coverage Results" MODIFIED="1727148344071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$2_2_CoTAttention.coverage" NAME="2_2_CoTAttention Coverage Results" MODIFIED="1713184688813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$5_6_CSMamba.coverage" NAME="5_6_CSMamba Coverage Results" MODIFIED="1727027448756" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mamba_file" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$2_16_MSA_2Net.coverage" NAME="2_16_MSA-2Net Coverage Results" MODIFIED="1727023940209" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$5_5_ConBiMamba.coverage" NAME="5_5_ConBiMamba Coverage Results" MODIFIED="1727027382153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mamba_file" />
+    <SUITE FILE_PATH="coverage/dream_code$vmamba.coverage" NAME="vmamba Coverage Results" MODIFIED="1725265809559" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mamba_file/VMRNN_self" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$3_7_Deformable_Attention__1_.coverage" NAME="3_7_Deformable_Attention (1) Coverage Results" MODIFIED="1727024330484" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$2_3_EMAttention.coverage" NAME="2_3_EMAttention Coverage Results" MODIFIED="1713184693698" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$Attention__1_.coverage" NAME="Attention (1) Coverage Results" MODIFIED="1709347946848" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$3_1_PAM.coverage" NAME="3_1_PAM Coverage Results" MODIFIED="1727024158831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$MedMamba.coverage" NAME="MedMamba Coverage Results" MODIFIED="1726026454506" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mamba_file" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$3_11_WITRAN__1_.coverage" NAME="3_11_WITRAN (1) Coverage Results" MODIFIED="1727024772137" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$1_3_CBAM.coverage" NAME="1_3_CBAM Coverage Results" MODIFIED="1713184657391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$3_3_Trend_aware_self_attention.coverage" NAME="3_3_Trend_aware_self_attention Coverage Results" MODIFIED="1713185388645" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v3$2_21_TSSA__1_.coverage" NAME="2_21_TSSA (1) Coverage Results" MODIFIED="1754812527354" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$Mamba__1_.coverage" NAME="Mamba (1) Coverage Results" MODIFIED="1724432522221" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mamba" />
+    <SUITE FILE_PATH="coverage/dream_code$1_1_SENet.coverage" NAME="1_1_SENet Coverage Results" MODIFIED="1713184647836" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$MSA_2Net.coverage" NAME="MSA-2Net Coverage Results" MODIFIED="1724404723680" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$HiLoAttention.coverage" NAME="HiLoAttention Coverage Results" MODIFIED="1709392688590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$4_2_Relu_Linear_Attention__1_.coverage" NAME="4_2_Relu_Linear_Attention (1) Coverage Results" MODIFIED="1709523898380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$5_1_Gated_Fusion.coverage" NAME="5_1_Gated_Fusion Coverage Results" MODIFIED="1727025154653" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$3_6_UnetTSF.coverage" NAME="3_6_UnetTSF Coverage Results" MODIFIED="1727024283100" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$Histoformer.coverage" NAME="Histoformer Coverage Results" MODIFIED="1727023774154" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$RWKV_TS.coverage" NAME="RWKV_TS Coverage Results" MODIFIED="1726803628772" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$2_11_PKINet__1_.coverage" NAME="2_11_PKINet (1) Coverage Results" MODIFIED="1727022386498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$CSMamba.coverage" NAME="CSMamba Coverage Results" MODIFIED="1725810358242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mamba_file" />
+    <SUITE FILE_PATH="coverage/dream_code$Taylor_Linear_Attention.coverage" NAME="Taylor_Linear_Attention Coverage Results" MODIFIED="1724229598995" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$4_2_Relu_Linear_Attention.coverage" NAME="4_2_Relu_Linear_Attention Coverage Results" MODIFIED="1727024858970" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$MSTC.coverage" NAME="MSTC Coverage Results" MODIFIED="1726560184426" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$MLLAttention.coverage" NAME="MLLAttention Coverage Results" MODIFIED="1725702275594" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v3$2_23_AnchorAttention.coverage" NAME="2_23_AnchorAttention Coverage Results" MODIFIED="1755245211293" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$MSAA.coverage" NAME="MSAA Coverage Results" MODIFIED="1725447976379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$Mamba.coverage" NAME="Mamba Coverage Results" MODIFIED="1726371315998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mamba_file" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$5_9_MedMamba.coverage" NAME="5_9_MedMamba Coverage Results" MODIFIED="1727027570382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mamba_file" />
+    <SUITE FILE_PATH="coverage/dream_code$ConBiMamba__1_.coverage" NAME="ConBiMamba (1) Coverage Results" MODIFIED="1725376655702" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mamba_file" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$WITRAN.coverage" NAME="WITRAN Coverage Results" MODIFIED="1727024743101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$1_2_SKNets.coverage" NAME="1_2_SKNets Coverage Results" MODIFIED="1713184652222" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v3$1_8_SPC_SA.coverage" NAME="1_8_SPC-SA Coverage Results" MODIFIED="1755167650713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$1_3_3_CBAM_Sequence.coverage" NAME="1_3_3_CBAM_Sequence Coverage Results" MODIFIED="1735874082456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$4_2_Relu_Linear_Attention.coverage" NAME="4_2_Relu_Linear_Attention Coverage Results" MODIFIED="1713185416642" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$test_fft.coverage" NAME="test_fft Coverage Results" MODIFIED="1726651388716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$BMCNet__1_.coverage" NAME="BMCNet (1) Coverage Results" MODIFIED="1724405167068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$6_10_VITComer.coverage" NAME="6_10_VITComer Coverage Results" MODIFIED="1727027154241" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$5_3_MSTF.coverage" NAME="5_3_MSTF Coverage Results" MODIFIED="1713185447685" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$6_9_MSTC.coverage" NAME="6_9_MSTC Coverage Results" MODIFIED="1727026552517" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code_v2$5_8_ShuffleMamba.coverage" NAME="5_8_ShuffleMamba Coverage Results" MODIFIED="1727027536636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mamba_file" />
+    <SUITE FILE_PATH="coverage/dream_code$EMA.coverage" NAME="EMA Coverage Results" MODIFIED="1709353213327" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dream_code$EMCAD.coverage" NAME="EMCAD Coverage Results" MODIFIED="1724293794258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
