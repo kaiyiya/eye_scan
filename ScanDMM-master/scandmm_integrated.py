@@ -40,10 +40,13 @@ import pyro.poutine as poutine
 from pyro.distributions import *
 from pyro.infer import SVI, Trace_ELBO, Predictive
 from pyro.optim import ClippedAdam
-from numpy import sin, cos, tan, pi, arcsin, arctan
+from numpy import sin, cos, tan, arcsin, arctan
 from torch.nn import Parameter
 
-pi = math.pi
+# 使用numpy的pi，因为球面计算函数需要numpy的pi
+import numpy as np
+
+pi = np.pi
 
 
 # ============================================================================
@@ -1008,43 +1011,61 @@ class Train:
 
     def run(self):
         """运行训练"""
-        self.setup_adam()
-        self.setup_inference()
-        self.setup_logging()
+        try:
+            self.setup_adam()
+            self.setup_inference()
+            self.setup_logging()
 
-        if self.args.load_opt is not None and self.args.load_model is not None:
-            self.load_checkpoint()
+            if self.args.load_opt is not None and self.args.load_model is not None:
+                self.load_checkpoint()
 
-        train_data = self.prepare_train_data()
-        self.sequences = train_data["sequences"]
-        self.seq_lengths = train_data["sequence_lengths"]
-        self.images = train_data["images"]
-        self.N_sequences = len(self.seq_lengths)
-        self.N_time_slices = float(torch.sum(self.seq_lengths))
-        self.N_mini_batches = int(self.N_sequences / self.args.bs +
-                                  int(self.N_sequences % self.args.bs > 0))
+            train_data = self.prepare_train_data()
+            self.sequences = train_data["sequences"]
+            self.seq_lengths = train_data["sequence_lengths"]
+            self.images = train_data["images"]
+            self.N_sequences = len(self.seq_lengths)
+            self.N_time_slices = float(torch.sum(self.seq_lengths))
+            self.N_mini_batches = int(self.N_sequences / self.args.bs +
+                                      int(self.N_sequences % self.args.bs > 0))
 
-        logging.info("N_train_data: %d\t avg. training seq. length: %.2f\t N_mini_batches: %d"
-                     % (self.N_sequences, self.seq_lengths.float().mean(), self.N_mini_batches))
+            logging.info("N_train_data: %d\t avg. training seq. length: %.2f\t N_mini_batches: %d"
+                         % (self.N_sequences, self.seq_lengths.float().mean(), self.N_mini_batches))
 
-        times = [time.time()]
+            times = [time.time()]
 
-        for epoch in range(self.args.epochs):
-            epoch_nll = 0.0
-            shuffled_indices = torch.randperm(self.N_sequences)
+            for epoch in range(self.args.epochs):
+                try:
+                    epoch_nll = 0.0
+                    shuffled_indices = torch.randperm(self.N_sequences)
 
-            for which_mini_batch in range(self.N_mini_batches):
-                epoch_nll += self.process_minibatch(epoch, which_mini_batch, shuffled_indices)
+                    for which_mini_batch in range(self.N_mini_batches):
+                        try:
+                            epoch_nll += self.process_minibatch(epoch, which_mini_batch, shuffled_indices)
+                        except Exception as e:
+                            logging.error("处理批次时出错 [epoch %d, batch %d]: %s" % (epoch, which_mini_batch, str(e)))
+                            import traceback
+                            logging.error(traceback.format_exc())
+                            raise
 
-            times.append(time.time())
-            epoch_time = times[-1] - times[-2]
-            logging.info("[training epoch %04d]  %.4f \t\t\t\t(dt = %.3f sec)"
-                         % (epoch, epoch_nll / self.N_time_slices, epoch_time))
+                    times.append(time.time())
+                    epoch_time = times[-1] - times[-2]
+                    logging.info("[training epoch %04d]  %.4f \t\t\t\t(dt = %.3f sec)"
+                                 % (epoch, epoch_nll / self.N_time_slices, epoch_time))
 
-            save_name = 'model_lr-{}_bs-{}_epoch-{}.pkl'.format(
-                self.args.lr, self.args.bs, epoch)
+                    save_name = 'model_lr-{}_bs-{}_epoch-{}.pkl'.format(
+                        self.args.lr, self.args.bs, epoch)
 
-            self.save_checkpoint(save_name)
+                    self.save_checkpoint(save_name)
+                except Exception as e:
+                    logging.error("训练epoch %d时出错: %s" % (epoch, str(e)))
+                    import traceback
+                    logging.error(traceback.format_exc())
+                    raise
+        except Exception as e:
+            logging.error("训练过程中发生错误: %s" % str(e))
+            import traceback
+            logging.error(traceback.format_exc())
+            raise
 
 
 # ============================================================================
