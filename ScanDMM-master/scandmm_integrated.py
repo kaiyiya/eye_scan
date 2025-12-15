@@ -4,7 +4,7 @@ ScanDMM: 360度图像扫描路径预测的深度马尔可夫模型
 
 主要组件：
 1. 配置参数 (Config)
-2. 坐标卷积层 (CoordConv)
+2. 添加坐标通道(AddCorrdsTh)
 3. 球面CNN (Sphere CNN)
 4. 深度马尔可夫模型 (DMM)
 5. 训练和推理功能
@@ -17,18 +17,11 @@ import torch.nn.functional as F
 import numpy as np
 import math
 import os
-import time
-import logging
 import pickle
 import pickle as pck
 import cv2
-import matplotlib
-import matplotlib.pyplot as plt
-import matplotlib.cm as cm
-import matplotlib.image as mpimg
 import torchvision.transforms as transforms
 from argparse import ArgumentParser
-from datetime import datetime
 from functools import lru_cache
 from os.path import exists
 
@@ -85,7 +78,7 @@ class Config:
 
 
 # ============================================================================
-# 第二部分：坐标卷积层 (CoordConv)
+# 第二部分：添加通道
 # ============================================================================
 
 class AddCoordsTh(nn.Module):
@@ -97,8 +90,8 @@ class AddCoordsTh(nn.Module):
 
     def __init__(self, x_dim=64, y_dim=64, with_r=False):
         super(AddCoordsTh, self).__init__()
-        self.x_dim = x_dim
-        self.y_dim = y_dim
+        self.x_dim = x_dim  # [128]
+        self.y_dim = y_dim  # [256]
         self.with_r = with_r  # 是否添加径向距离r
 
     def forward(self, input_tensor):
@@ -106,92 +99,38 @@ class AddCoordsTh(nn.Module):
         输入: (batch, c, x_dim, y_dim)
         输出: (batch, c+2(+1), x_dim, y_dim) - 添加了x和y坐标通道
         """
-        batch_size_tensor = input_tensor.shape[0]
+        batch_size_tensor = input_tensor.shape[0]  # [64,3,128,256]=>[64]
 
         # 生成x坐标通道
-        xx_ones = torch.ones([1, self.y_dim], dtype=torch.int32).unsqueeze(-1)
-        xx_range = torch.arange(self.x_dim, dtype=torch.int32).unsqueeze(0).unsqueeze(1)
-        xx_channel = torch.matmul(xx_ones, xx_range).unsqueeze(-1)
+        xx_ones = torch.ones([1, self.y_dim], dtype=torch.int32).unsqueeze(-1)  # [1,256,1]
+        xx_range = torch.arange(self.x_dim, dtype=torch.int32).unsqueeze(0).unsqueeze(1)  # [1,1,128]
+        xx_channel = torch.matmul(xx_ones, xx_range).unsqueeze(-1)  # [1,256,128,1]
 
         # 生成y坐标通道
-        yy_ones = torch.ones([1, self.x_dim], dtype=torch.int32).unsqueeze(1)
-        yy_range = torch.arange(self.y_dim, dtype=torch.int32).unsqueeze(0).unsqueeze(-1)
-        yy_channel = torch.matmul(yy_range, yy_ones).unsqueeze(-1)
+        yy_ones = torch.ones([1, self.x_dim], dtype=torch.int32).unsqueeze(1)  # [1,128,1]
+        yy_range = torch.arange(self.y_dim, dtype=torch.int32).unsqueeze(0).unsqueeze(-1)  # [1,1,256]
+        yy_channel = torch.matmul(yy_range, yy_ones).unsqueeze(-1)  # [1,256,128,1]
 
         # 调整维度顺序
-        xx_channel = xx_channel.permute(0, 3, 2, 1)
-        yy_channel = yy_channel.permute(0, 3, 2, 1)
+        xx_channel = xx_channel.permute(0, 3, 2, 1)  # [1,1,128,256]
+        yy_channel = yy_channel.permute(0, 3, 2, 1)  # [1,1,128,256]
 
         # 归一化到[-1, 1]
         xx_channel = xx_channel.float() / (self.x_dim - 1) * 2 - 1
         yy_channel = yy_channel.float() / (self.y_dim - 1) * 2 - 1
 
         # 扩展到批次大小并移动到相同设备
-        xx_channel = xx_channel.repeat(batch_size_tensor, 1, 1, 1).to(input_tensor.device)
-        yy_channel = yy_channel.repeat(batch_size_tensor, 1, 1, 1).to(input_tensor.device)
+        xx_channel = xx_channel.repeat(batch_size_tensor, 1, 1, 1).to(input_tensor.device)  # [64,1,128,256]
+        yy_channel = yy_channel.repeat(batch_size_tensor, 1, 1, 1).to(input_tensor.device)  # [64,1,128,256]
 
         # 拼接坐标通道
-        ret = torch.cat([input_tensor, xx_channel, yy_channel], dim=1)
+        ret = torch.cat([input_tensor, xx_channel, yy_channel], dim=1)  # [64,5,128,256]
 
         # 可选：添加径向距离r
         if self.with_r:
             rr = torch.sqrt(torch.pow(xx_channel - 0.5, 2) + torch.pow(yy_channel - 0.5, 2))
             ret = torch.cat([ret, rr], dim=1)
 
-        return ret
-
-
-class AddCoords(nn.Module):
-    """自动推断尺寸的坐标添加层（替代实现）"""
-
-    def __init__(self, with_r=False):
-        super().__init__()
-        self.with_r = with_r
-
-    def forward(self, input_tensor):
-        """自动从输入张量推断尺寸"""
-        batch_size, _, x_dim, y_dim = input_tensor.size()
-
-        # 生成坐标通道
-        xx_channel = torch.arange(x_dim).repeat(1, y_dim, 1)
-        yy_channel = torch.arange(y_dim).repeat(1, x_dim, 1).transpose(1, 2)
-
-        # 归一化到[-1, 1]
-        xx_channel = xx_channel.float() / (x_dim - 1) * 2 - 1
-        yy_channel = yy_channel.float() / (y_dim - 1) * 2 - 1
-
-        # 调整维度并扩展到批次大小
-        xx_channel = xx_channel.repeat(batch_size, 1, 1, 1).transpose(2, 3)
-        yy_channel = yy_channel.repeat(batch_size, 1, 1, 1).transpose(2, 3)
-
-        ret = torch.cat([
-            input_tensor,
-            xx_channel.type_as(input_tensor),
-            yy_channel.type_as(input_tensor)], dim=1)
-
-        if self.with_r:
-            rr = torch.sqrt(
-                torch.pow(xx_channel.type_as(input_tensor) - 0.5, 2) +
-                torch.pow(yy_channel.type_as(input_tensor) - 0.5, 2))
-            ret = torch.cat([ret, rr], dim=1)
-
-        return ret
-
-
-class CoordConv(nn.Module):
-    """坐标卷积层：先添加坐标，再进行卷积"""
-
-    def __init__(self, in_channels, out_channels, with_r=False, **kwargs):
-        super().__init__()
-        self.addcoords = AddCoords(with_r=with_r)
-        in_size = in_channels + 2
-        if with_r:
-            in_size += 1
-        self.conv = nn.Conv2d(in_size, out_channels, **kwargs)
-
-    def forward(self, x):
-        ret = self.addcoords(x)
-        ret = self.conv(ret)
         return ret
 
 
@@ -203,7 +142,7 @@ class CoordConv(nn.Module):
 def get_xy(delta_phi, delta_theta):
     """
     计算球面卷积核的采样模式
-    返回3x3卷积核在球面上的采样位置
+    返回3x3卷积核在球面上的采样位置(相对于中心点1,1) 注意,这个中心点其实是错的,为了防止除0错,才设置的,但是后面会被覆盖
     """
     return np.array([
         [
@@ -230,7 +169,12 @@ def cal_index(h, w, img_r, img_c):
     计算球面卷积核的采样索引
     将等距圆柱投影(equirectangular)图像上的像素位置转换为球面坐标，
     然后计算3x3卷积核的采样位置
-    
+
+    流程总结
+    对于128×256像素的360度图像，以每个点为中心进行3×3卷积采样：
+    获取切平面的偏移量：计算中心点周围9个方向（3×3）的偏移量
+    转换为球面坐标：用偏移量计算对应的球面坐标 (new_phi, new_theta)
+    转换为像素坐标：将球面坐标转换回像素坐标 (new_r, new_c)
     参数:
         h, w: 图像高度和宽度
         img_r, img_c: 当前像素的行和列位置
@@ -241,8 +185,8 @@ def cal_index(h, w, img_r, img_c):
     phi = -((img_r + 0.5) / h * pi - pi / 2)  # 纬度
     theta = (img_c + 0.5) / w * 2 * pi - pi  # 经度
 
-    delta_phi = pi / h  # 纬度步长
-    delta_theta = 2 * pi / w  # 经度步长
+    delta_phi = pi / h  # 纬度步长 0.02454弧度
+    delta_theta = 2 * pi / w  # 经度步长0.02454弧度
 
     # 获取3x3采样模式
     xys = get_xy(delta_phi, delta_theta)
@@ -272,7 +216,7 @@ def _gen_filters_coordinates(h, w, stride):
     """生成所有位置的卷积核采样坐标"""
     co = np.array([[cal_index(h, w, i, j) for j in range(0, w, stride)]
                    for i in range(0, h, stride)])
-    return np.ascontiguousarray(co.transpose([4, 0, 1, 2, 3]))
+    return np.ascontiguousarray(co.transpose([4, 0, 1, 2, 3]))  # 这里是为了更好的给grid_sample使用  [(x,y),H,W,3,3]
 
 
 def gen_filters_coordinates(h, w, stride=1):
@@ -289,14 +233,14 @@ def gen_grid_coordinates(h, w, stride=1):
     生成用于grid_sample的采样网格坐标
     将采样坐标归一化到[-1, 1]范围，并调整为grid_sample需要的格式
     """
-    coordinates = gen_filters_coordinates(h, w, stride).copy()
+    coordinates = gen_filters_coordinates(h, w, stride).copy()  # [(x,y),H,W,3,3]
     # 归一化到[-1, 1]
-    coordinates[0] = (coordinates[0] * 2 / h) - 1
-    coordinates[1] = (coordinates[1] * 2 / w) - 1
+    coordinates[0] = (coordinates[0] * 2 / h) - 1  # 将x坐标归一化
+    coordinates[1] = (coordinates[1] * 2 / w) - 1  # 将y坐标归一化
     coordinates = coordinates[::-1]  # 反转维度顺序
     coordinates = coordinates.transpose(1, 3, 2, 4, 0)
-    sz = coordinates.shape
-    coordinates = coordinates.reshape(1, sz[0] * sz[1], sz[2] * sz[3], sz[4])
+    sz = coordinates.shape  # [H/stride,3,W/stride,3,2] (H位置, 卷积核行, W位置, 卷积核列, 坐标)
+    coordinates = coordinates.reshape(1, sz[0] * sz[1], sz[2] * sz[3], sz[4])  # 重塑(batch, 高度, 宽度, 坐标)
     return coordinates.copy()
 
 
@@ -342,7 +286,7 @@ class SphereConv2D(nn.Module):
         # 如果输入尺寸改变，重新生成采样网格
         if self.grid_shape is None or self.grid_shape != tuple(x.shape[2:4]):
             self.grid_shape = tuple(x.shape[2:4])
-            coordinates = gen_grid_coordinates(x.shape[2], x.shape[3], self.stride)
+            coordinates = gen_grid_coordinates(x.shape[2], x.shape[3], self.stride)  # [batch,w/stride*3,h/stride*3,2]
             with torch.no_grad():
                 self.grid = torch.FloatTensor(coordinates).to(x.device)
                 self.grid.requires_grad = True
@@ -358,45 +302,15 @@ class SphereConv2D(nn.Module):
         return x
 
 
-class SphereMaxPool2D(nn.Module):
-    """
-    球面最大池化层
-    在球面几何上进行最大池化操作
-    注意：只支持3x3池化核
-    """
-
-    def __init__(self, stride=1, mode='bilinear'):
-        super(SphereMaxPool2D, self).__init__()
-        self.stride = stride
-        self.mode = mode
-        self.grid_shape = None
-        self.grid = None
-        self.pool = nn.MaxPool2d(kernel_size=3, stride=3)
-
-    def forward(self, x):
-        """前向传播：先进行球面采样，再进行最大池化"""
-        if self.grid_shape is None or self.grid_shape != tuple(x.shape[2:4]):
-            self.grid_shape = tuple(x.shape[2:4])
-            coordinates = gen_grid_coordinates(x.shape[2], x.shape[3], self.stride)
-            with torch.no_grad():
-                self.grid = torch.FloatTensor(coordinates).to(x.device)
-                self.grid.requires_grad = True
-
-        with torch.no_grad():
-            grid = self.grid.repeat(x.shape[0], 1, 1, 1)
-
-        return self.pool(F.grid_sample(x, grid, mode=self.mode, align_corners=True))
-
-
 class Sphere_CNN(nn.Module):
     """
     球面CNN特征提取器
-    用于从360度图像中提取特征，输出固定维度的特征向量
+    用于从360度图像中提取特征，输出固定维度的特征向量 100维
     """
 
     def __init__(self, out_put_dim):
         super(Sphere_CNN, self).__init__()
-        self.output_dim = out_put_dim
+        self.output_dim = out_put_dim  # [100]
 
         # 添加坐标通道（CoordConv）
         self.coord_conv = AddCoordsTh(x_dim=128, y_dim=256, with_r=False)
@@ -711,17 +625,6 @@ class DMM(nn.Module):
 # 第五部分：工具函数 (Utility Functions)
 # ============================================================================
 
-def rotate_images(input_path, output_path):
-    """旋转360度图像进行数据增强"""
-    for _, _, files in os.walk(input_path):
-        for name in files:
-            for i in range(6):
-                angle = str(-180 + i * 60)
-                cmd = 'ffmpeg -i ' + input_path + name + ' -vf v360=e:e:yaw=' + angle + ' ' + \
-                      output_path + name.split('.')[0] + '_' + str(i) + '.png'
-                os.system(cmd)
-
-
 def image_process(path):
     """图像预处理：读取、调整大小、归一化"""
     image = cv2.imread(path, cv2.IMREAD_COLOR)
@@ -805,70 +708,6 @@ def xyz2plane(threeD_cord, height_width=None):
     return plane_cors
 
 
-def plot_scanpaths(scanpaths, img_path, lengths, save_path, img_height=256, img_witdth=512):
-    """
-    可视化扫描路径
-    在360度图像上绘制预测的扫描路径
-    """
-    image = cv2.resize(matplotlib.image.imread(img_path), (img_witdth, img_height))
-    image_name = os.path.basename(img_path).split('.')[0]
-
-    if not os.path.exists(save_path):
-        os.makedirs(save_path)
-
-    fig, axs = plt.subplots(4, 5, constrained_layout=True)
-    fig.set_size_inches(48, 24)
-
-    # 绘制20条扫描路径
-    for user_i in range(20):
-        idx1 = int(user_i / 5)
-        idx2 = user_i % 5
-
-        points_x = []
-        points_y = []
-        for sample_i in range(lengths[user_i]):
-            points_x.append(scanpaths[user_i][sample_i][1])
-            points_y.append(scanpaths[user_i][sample_i][0])
-
-        colors = cm.rainbow(np.linspace(0, 1, len(points_x)))
-
-        previous_point = None
-        for num, x, y, c in zip(range(0, len(points_x)), points_x, points_y, colors):
-            x = x * img_witdth
-            y = y * img_height
-            markersize = 28.
-
-            # 绘制连接线（处理360度图像的边界连续性）
-            if previous_point is not None:
-                if abs(previous_point[0] - x) < (img_witdth / 2):
-                    axs[idx1, idx2].plot([x, previous_point[0]], [y, previous_point[1]],
-                                         color='blue', linewidth=8., alpha=0.35)
-                else:
-                    h_diff = (y - previous_point[1]) / 2
-                    if (x > previous_point[0]):
-                        axs[idx1, idx2].plot([previous_point[0], 0],
-                                             [previous_point[1], previous_point[1] + h_diff],
-                                             color='blue', linewidth=8., alpha=0.35)
-                        axs[idx1, idx2].plot([img_witdth, x], [previous_point[1] + h_diff, y],
-                                             color='blue', linewidth=8., alpha=0.35)
-                    else:
-                        axs[idx1, idx2].plot([previous_point[0], img_witdth],
-                                             [previous_point[1], previous_point[1] + h_diff],
-                                             color='blue', linewidth=8., alpha=0.35)
-                        axs[idx1, idx2].plot([0, x], [previous_point[1] + h_diff, y],
-                                             color='blue', linewidth=8., alpha=0.35)
-            previous_point = [x, y]
-            axs[idx1, idx2].plot(x, y, marker='o', markersize=markersize, color=c, alpha=.8)
-        axs[idx1, idx2].imshow(image)
-        axs[idx1, idx2].axis('off')
-
-    plt.savefig(os.path.join(save_path, 'sp_' + image_name + ".png"))
-    plt.axis('off')
-    plt.subplots_adjust(wspace=0, hspace=0)
-    plt.clf()
-    plt.close('all')
-
-
 # ============================================================================
 # 第六部分：训练类 (Training)
 # ============================================================================
@@ -876,23 +715,10 @@ def plot_scanpaths(scanpaths, img_path, lengths, save_path, img_height=256, img_
 class Train:
     """训练类：封装训练流程"""
 
-    def __init__(self, model, train_package, args, log_path):
+    def __init__(self, model, train_package, args):
         self.dmm = model
         self.args = args
-        self.log_path = log_path
         self.train_package = train_package
-
-    def setup_logging(self):
-        """设置日志"""
-        if not os.path.exists('./Log'):
-            os.makedirs('./Log')
-        logging.basicConfig(level=logging.DEBUG, format="%(message)s", filename=self.log_path, filemode="w")
-        console = logging.StreamHandler()
-        console.setLevel(logging.INFO)
-        logging.getLogger("").addHandler(console)
-        logging.info('Train_set:{}\nLearning Rate:{}\nBatch Size:{}\nEpochs:{}\n'.format(
-            self.args.dataset, self.args.lr, self.args.bs, self.args.epochs
-        ))
 
     def setup_adam(self):
         """设置优化器"""
@@ -919,7 +745,6 @@ class Train:
     def load_checkpoint(self):
         """加载模型检查点"""
         assert exists(self.args.load_opt) and exists(self.args.load_model), "Load model: path error"
-        logging.info("Loading model from %s" % self.args.load_model)
         self.dmm.load_state_dict(torch.load(self.args.load_model))
         self.adam.load(self.args.load_opt)
 
@@ -1011,61 +836,31 @@ class Train:
 
     def run(self):
         """运行训练"""
-        try:
-            self.setup_adam()
-            self.setup_inference()
-            self.setup_logging()
+        self.setup_adam()
+        self.setup_inference()
 
-            if self.args.load_opt is not None and self.args.load_model is not None:
-                self.load_checkpoint()
+        if self.args.load_opt is not None and self.args.load_model is not None:
+            self.load_checkpoint()
 
-            train_data = self.prepare_train_data()
-            self.sequences = train_data["sequences"]
-            self.seq_lengths = train_data["sequence_lengths"]
-            self.images = train_data["images"]
-            self.N_sequences = len(self.seq_lengths)
-            self.N_time_slices = float(torch.sum(self.seq_lengths))
-            self.N_mini_batches = int(self.N_sequences / self.args.bs +
-                                      int(self.N_sequences % self.args.bs > 0))
+        train_data = self.prepare_train_data()
+        self.sequences = train_data["sequences"]
+        self.seq_lengths = train_data["sequence_lengths"]
+        self.images = train_data["images"]
+        self.N_sequences = len(self.seq_lengths)
+        self.N_time_slices = float(torch.sum(self.seq_lengths))
+        self.N_mini_batches = int(self.N_sequences / self.args.bs +
+                                  int(self.N_sequences % self.args.bs > 0))
 
-            logging.info("N_train_data: %d\t avg. training seq. length: %.2f\t N_mini_batches: %d"
-                         % (self.N_sequences, self.seq_lengths.float().mean(), self.N_mini_batches))
+        for epoch in range(self.args.epochs):
+            epoch_nll = 0.0
+            shuffled_indices = torch.randperm(self.N_sequences)
 
-            times = [time.time()]
+            for which_mini_batch in range(self.N_mini_batches):
+                epoch_nll += self.process_minibatch(epoch, which_mini_batch, shuffled_indices)
 
-            for epoch in range(self.args.epochs):
-                try:
-                    epoch_nll = 0.0
-                    shuffled_indices = torch.randperm(self.N_sequences)
-
-                    for which_mini_batch in range(self.N_mini_batches):
-                        try:
-                            epoch_nll += self.process_minibatch(epoch, which_mini_batch, shuffled_indices)
-                        except Exception as e:
-                            logging.error("处理批次时出错 [epoch %d, batch %d]: %s" % (epoch, which_mini_batch, str(e)))
-                            import traceback
-                            logging.error(traceback.format_exc())
-                            raise
-
-                    times.append(time.time())
-                    epoch_time = times[-1] - times[-2]
-                    logging.info("[training epoch %04d]  %.4f \t\t\t\t(dt = %.3f sec)"
-                                 % (epoch, epoch_nll / self.N_time_slices, epoch_time))
-
-                    save_name = 'model_lr-{}_bs-{}_epoch-{}.pkl'.format(
-                        self.args.lr, self.args.bs, epoch)
-
-                    self.save_checkpoint(save_name)
-                except Exception as e:
-                    logging.error("训练epoch %d时出错: %s" % (epoch, str(e)))
-                    import traceback
-                    logging.error(traceback.format_exc())
-                    raise
-        except Exception as e:
-            logging.error("训练过程中发生错误: %s" % str(e))
-            import traceback
-            logging.error(traceback.format_exc())
-            raise
+            save_name = 'model_lr-{}_bs-{}_epoch-{}.pkl'.format(
+                self.args.lr, self.args.bs, epoch)
+            self.save_checkpoint(save_name)
 
 
 # ============================================================================
@@ -1075,13 +870,12 @@ class Train:
 class Inference:
     """推理类：用于生成扫描路径"""
 
-    def __init__(self, model, img_path, n_scanpaths, length, output_path, if_plot=False):
+    def __init__(self, model, img_path, n_scanpaths, length, output_path):
         self.dmm = model
         self.img_path = img_path
         self.n_scanpaths = n_scanpaths
         self.length = length
         self.output_path = output_path
-        self.if_plot = if_plot
 
     def create_random_starting_points(self, num_points):
         """创建随机起始点（从赤道偏置分布采样）"""
@@ -1127,9 +921,7 @@ class Inference:
 
         for _, _, files in os.walk(self.img_path):
             num_img = len(files)
-            count = 0
             for img in files:
-                count += 1
                 img_path = os.path.join(self.img_path, img)
                 image_tensor = torch.unsqueeze(image_process(img_path), dim=0).repeat([rep_num, 1, 1, 1])
                 starting_points = torch.unsqueeze(
@@ -1153,19 +945,12 @@ class Inference:
 
                     scanpaths = self.summary(samples).cpu().numpy()
 
-                    print('[{}]/[{}]:{} {} scanpaths are produced\nSaving to {}'
-                          .format(count, num_img, img, scanpaths.shape[0], self.output_path))
                     save_name = img.split('.')[0] + '.npy'
 
                     if not os.path.exists(self.output_path):
                         os.makedirs(self.output_path)
 
                     np.save(os.path.join(self.output_path, save_name), scanpaths)
-
-                    if self.if_plot:
-                        print('Begin to plot scanpaths')
-                        length_tensor = (torch.ones(self.n_scanpaths) * self.length).int()
-                        plot_scanpaths(scanpaths, img_path, length_tensor.numpy(), save_path=self.output_path)
 
 
 # ============================================================================
@@ -1211,16 +996,6 @@ def create_info():
         }
     }
     return info
-
-
-def summary(info):
-    """打印数据集摘要信息"""
-    print("\n============================================")
-    print("Train_set:   {} images, {} scanpaths,  length ={}".
-          format(info['train']['num_image'], info['train']['num_scanpath'], info['train']['scanpath_length']))
-    print("Test_set:    {} images, {} scanpaths,  length ={}".
-          format(info['test']['num_image'], info['test']['num_scanpath'], info['test']['scanpath_length']))
-    print("============================================\n")
 
 
 class Sitzmann_Dataset:
@@ -1356,10 +1131,6 @@ class Sitzmann_Dataset:
                         self.images_train_list[image_id].split('/')[-1].split('.')[0],
                         dic)
 
-                print('Processing - {}. [Filter out {} scanpaths]'
-                      .format(self.images_train_list[image_id].split('/')[-1],
-                              len(run['data']) - scanpath_id - 1))
-
                 image_id += 1
 
         self.info['train']['num_image'] = image_id
@@ -1405,9 +1176,6 @@ class Sitzmann_Dataset:
                     self.images_test_list[image_id].split('/')[-1].split('.')[0],
                     dic)
 
-            print('Processing - {}. [Filter out {} scanpaths]'
-                  .format(self.images_test_list[image_id].split('/')[-1], gaze_.shape[0] - scanpath_id))
-
             image_id += 1
 
         self.info['test']['num_image'] = image_id
@@ -1422,10 +1190,7 @@ class Sitzmann_Dataset:
                 else:
                     self.images_train_list.append(os.path.join(self.images_path, file_name))
 
-        print('\nProcessing [Training Set]\n')
         self.get_train_set()
-
-        print('\nProcessing [Test Set]\n')
         self.get_test_set()
 
         self.image_and_scanpath_dict['info'] = self.info
@@ -1437,13 +1202,15 @@ class Sitzmann_Dataset:
 # ============================================================================
 
 if __name__ == '__main__':
-    # 训练示例
     parser = ArgumentParser(description='ScanDMM')
-    parser.add_argument('--seed', default=Config.seed, type=int, help='seed, default = 1234')
     parser.add_argument('--dataset', default='./Datasets/Sitzmann.pkl', type=str,
                         help='dataset path, default = ./Datasets/Sitzmann.pkl')
-    parser.add_argument('--lr', default=Config.learning_rate, type=float, help='learning rate, default = 0.0003')
-    parser.add_argument('--bs', default=Config.mini_batch_size, type=int, help='mini batch size, default = 64')
+    parser.add_argument('--lr', default=Config.learning_rate, type=float,
+                        help='learning rate, default = 0.0003')
+    parser.add_argument('--seed', default=Config.seed, type=int,
+                        help='seed, default = 1234')
+    parser.add_argument('--bs', default=Config.mini_batch_size, type=int,
+                        help='mini batch size, default = 64')
     parser.add_argument('--lr_decay', default=Config.lr_decay, type=float,
                         help='learning rate decay, default = 0.99998')
     parser.add_argument('--epochs', default=Config.num_epochs, type=int, help='num_epochs, default = 500')
@@ -1465,11 +1232,7 @@ if __name__ == '__main__':
     torch.manual_seed(args.seed)
     dmm = DMM(use_cuda=Config.use_cuda)
 
-    train_log = './Log/lr-{}_bs-{}_dy-{}_epo-{}_{}.txt'.format(
-        args.lr, args.bs, args.lr_decay, args.epochs,
-        datetime.now().strftime("%I:%M%p on %B %d, %Y"))
-
     train_dict = pickle.load(open(args.dataset, 'rb'))
 
-    trainer = Train(dmm, train_dict, args, train_log)
+    trainer = Train(dmm, train_dict, args)
     trainer.run()
