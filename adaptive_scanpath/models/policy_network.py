@@ -139,6 +139,12 @@ class StoppingNetwork(nn.Module):
             stop_prob: (B,) 停止概率
             stop_decision: (B,) 布尔决策（是否停止）
         """
+        # 确保last_fixation是正确的形状
+        if last_fixation.dim() == 1:
+            last_fixation = last_fixation.unsqueeze(0)
+        elif last_fixation.dim() == 3:
+            last_fixation = last_fixation.squeeze(1)
+
         # 拼接特征和注视点
         context = torch.cat([features, last_fixation], dim=-1)  # (B, feature_dim + 3)
 
@@ -245,6 +251,13 @@ class FeatureUpdater(nn.Module):
         Returns:
             updated_features: (B, feature_dim) 更新后的特征
         """
+        # 确��fixation是正确的形状
+        if fixation.dim() == 1:
+            fixation = fixation.unsqueeze(0)  # (3,) -> (1, 3)
+        elif fixation.dim() == 3:
+            # (B, 1, 3) -> (B, 3)
+            fixation = fixation.squeeze(1)
+
         # 编码注视点
         fixation_feat = self.fixation_encoder(fixation)  # (B, feature_dim)
 
