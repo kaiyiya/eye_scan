@@ -7,6 +7,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+import math
 
 
 class PolicyNetwork(nn.Module):
@@ -269,9 +270,6 @@ class FeatureUpdater(nn.Module):
         updated_features = gate * global_features + (1 - gate) * self.update(concat)
 
         return updated_features
-
-
-import math
 
 
 def test_policy_network():

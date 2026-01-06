@@ -22,14 +22,15 @@ except ImportError:
     print("警告: TensorBoard未安装，将跳过TensorBoard日志记录")
     print("安装命令: pip install tensorboard")
 
-from adaptive_scanpath.models import AdaptiveScanPath
-
 # 添加项目路径
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
+from models import AdaptiveScanPath
 from config import Config
 from utils.losses import ScanPathLoss, ScanPathMetrics, LengthAccuracy
 from data.dataset import create_dataloaders
+import os
 
 
 class Trainer:
@@ -104,9 +105,26 @@ class Trainer:
         """设置数据加载器"""
         print("加载数据集...")
 
-        self.train_loader, self.val_loader = create_dataloaders(
+        # 检查数据路径
+        if not os.path.exists(self.config.train_data_path):
+            raise FileNotFoundError(
+                f"未找到训练数据集: {self.config.train_data_path}\n"
+                "请先运行: python prepare_scandmm_data.py"
+            )
+
+        if not os.path.exists(self.config.val_data_path):
+            raise FileNotFoundError(
+                f"未找到验证数据集: {self.config.val_data_path}\n"
+                "请先运行: python prepare_scandmm_data.py"
+            )
+
+        print(f"✓ 训练数据路径: {self.config.train_data_path}")
+        print(f"✓ 验证数据路径: {self.config.val_data_path}")
+
+        self.train_loader, self.val_loader, _ = create_dataloaders(
             train_data_path=self.config.train_data_path,
             val_data_path=self.config.val_data_path,
+            test_data_path=self.config.test_data_path,
             batch_size=self.config.batch_size,
             num_workers=self.config.num_workers,
             image_height=self.config.image_height,
@@ -177,9 +195,9 @@ class Trainer:
 
         for batch_idx, batch in enumerate(pbar):
             # 数据移到设备
-            images = batch['images'].to(self.device)
-            gt_paths = batch['scanpaths'].to(self.device)
-            gt_lengths = batch['lengths']
+            images = batch['image'].to(self.device)
+            gt_paths = batch['scanpath'].to(self.device)
+            gt_lengths = batch['length']
 
             # 前向传播
             pred_paths, stop_probs = self.model(images, gt_paths, teacher_forcing_ratio=0.5)
@@ -239,9 +257,9 @@ class Trainer:
         val_loss = 0.0
 
         for batch in tqdm(self.val_loader, desc="验证中..."):
-            images = batch['images'].to(self.device)
-            gt_paths = batch['scanpaths'].to(self.device)
-            gt_lengths = batch['lengths']
+            images = batch['image'].to(self.device)
+            gt_paths = batch['scanpath'].to(self.device)
+            gt_lengths = batch['length']
 
             # 前向传播
             pred_paths, stop_probs = self.model(images, gt_paths, teacher_forcing_ratio=0.0)
